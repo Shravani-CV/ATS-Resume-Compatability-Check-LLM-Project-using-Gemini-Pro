@@ -17,6 +17,33 @@ Python 3.10
 Gemini Pro model api key (Note: Ensure you have the necessary credentials and permissions to access the Gemini Pro API)
 
 ## Installation
-Clone the repository:
-```bash git clone 
+**Step 1: **Clone the repository:
 ```
+git clone https://github.com/Shravani-CV/ATS-Resume-Compatability-Check-LLM-Project-using-Gemini-Pro.git 
+```
+**Step 2**: Install dependencies:
+```
+pip install -r requirements.txt
+```
+**Step 3**: Set up Gemini Pro API credentials:
+
+* Obtain API credentials from the makersuit platform.
+
+* Create a file named .env in the project root directory.
+
+* Add the following lines to .env:
+```
+GOOGLE_API_KEY= "your_api_key"
+```
+## Usage
+Run the application:
+```
+streamlit run app.py
+```
+Access the application through your web browser at http://localhost:5000.
+
+Input the job description and candidate's resume in the provided fields.
+
+Click the "Submit" button to initiate the analysis.
+
+Review the results, including the job description match, missing keywords, and profile summary.
